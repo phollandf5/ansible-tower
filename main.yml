@@ -1,4 +1,7 @@
-tasks:
+
+- name: check-f5
+  hosts: all
+  tasks:
     - name: Create Azure Deploy
       azure_rm_deployment:
         state: present
