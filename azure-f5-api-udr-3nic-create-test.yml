@@ -1,6 +1,8 @@
+---
 
-- name: check-f5
-  hosts: all
+- hosts: localhost
+  connection: local
+  gather_facts: no
   tasks:
   - name: Create Azure Deploy
     include_vars: myvars.yaml
