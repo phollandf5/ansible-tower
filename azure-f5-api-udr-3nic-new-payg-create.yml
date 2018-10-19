@@ -47,24 +47,6 @@
           value: 1
         vnetAddressPrefix:
           value: 10.1
-        vnetName:
-          value: arch1-vnet
-        vnetResourceGroupName:
-          value: bigip-rg-1
-        mgmtSubnetName:
-          value: mgmt
-        mgmtIpAddressRangeStart:
-          value: 10.1.1.10
-        externalSubnetName:
-          value: external
-        externalIpSelfAddressRangeStart:
-          value: 10.1.2.10
-        externalIpAddressRangeStart:
-          value: 10.1.2.100
-        internalSubnetName:
-          value: internal
-        internalIpAddressRangeStart:
-          value: 10.1.3.10
         managedRoutes:
           value: 0.0.0.0/0,10.1.4.0/24,10.1.5.0/24
         ntpServer:
