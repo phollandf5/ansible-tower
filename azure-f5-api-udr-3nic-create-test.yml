@@ -4,8 +4,6 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Include Vars 
-    include_vars: myvars.yaml
   - name: Create Azure Deploy  
     azure_rm_deployment:
       state: present
@@ -14,18 +12,17 @@
       location: ukwest
       parameters:
         tenantId:
-          value: "{{tenantId}}"
+          value: "{{AZURE_TENANT}}"
         clientId:
-          value: "{{clientId}}"
+          value: "{{AZURE_CLIENT_ID}}"
         servicePrincipalSecret:
-          value: "{{servicePrincipalSecret}}"
+          value: "{{AZURE_SECRET}}"
         adminUsername:
-          value: "{{adminUsername}}"
+          value: "{{AZURE_USER}}"
         adminPasswordOrKey:
-          value : "{{adminPasswordOrKey}}"
+          value : "{{AZURE_PASS}}"
         authenticationType:
           value: password
-        
         dnsLabel:
           value: arch-f5
         instanceName:
