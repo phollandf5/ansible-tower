@@ -1,1 +1,1 @@
-This is my attempt to create a replicable environment that can deploy demos using multiple tools.
+Repository of playbooks for deploying F5 into public cloud environments using F5 CFT/ARM templates.

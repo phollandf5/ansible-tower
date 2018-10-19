@@ -1,8 +1,8 @@
 
-- name: check-f5
+- name: Deploy F5 Into Azure
   hosts: all
   tasks:
-    - name: Create Azure Deploy
+    - name: Launch the ARM template to deploy F5 into Azure
       azure_rm_deployment:
         state: present
         resource_group_name: bigip-rg-1
