@@ -4,7 +4,7 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Create Azure Deploy  
+  - name: Launch and populate F5 ARM template to deploy into Azure.  
     azure_rm_deployment:
       state: present
       resource_group_name: bigip-rg-1
