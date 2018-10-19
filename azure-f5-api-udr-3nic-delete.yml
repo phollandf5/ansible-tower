@@ -4,17 +4,13 @@
   tasks:
     - name: Create Azure Deploy
       azure_rm_deployment:
-        state: present
+        state: absent
         resource_group_name: bigip-rg-1
         template_link: "https://raw.githubusercontent.com/F5Networks/f5-azure-arm-templates/v5.4.0.0/supported/failover/same-net/via-api/n-nic/existing-stack/byol/azuredeploy.json"
         location: ukwest
         parameters:
-          adminUsername:
-            value: azureuser
-          authenticationType:
-            value: password
           adminPasswordOrKey:
-            value: Azureuser8472!!
+            value: 
           dnsLabel:
             value: arch-f5
           instanceName:
