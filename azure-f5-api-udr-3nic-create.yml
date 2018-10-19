@@ -42,11 +42,11 @@
         vnetResourceGroupName:
           value: arch1-vnet-rg
         tenantId:
-          value: subscription_id
+          value: '{{ az_tenantId }}'
         clientId:
-          value: client_id
+          value: '{{ az_clientId }}'
         servicePrincipalSecret:
-          value: secret
+          value: '{{ az_servicePrincipalSecret }}'
         mgmtSubnetName:
           value: mgmt
         mgmtIpAddressRangeStart:
