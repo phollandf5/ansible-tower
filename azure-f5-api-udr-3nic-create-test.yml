@@ -12,15 +12,15 @@
       location: ukwest
       parameters:
         tenantId:
-          value: "{{AZURE_TENANT}}"
+          value: "{{ subscription_id }}"
         clientId:
-          value: "{{AZURE_CLIENT_ID}}"
+          value: "{{ client_id }}"
         servicePrincipalSecret:
-          value: "{{AZURE_SECRET}}"
+          value: "{{ secret }}"
         adminUsername:
-          value: "{{AZURE_USER}}"
+          value: 
         adminPasswordOrKey:
-          value : "{{AZURE_PASS}}"
+          value : 
         authenticationType:
           value: password
         dnsLabel:
