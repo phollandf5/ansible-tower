@@ -7,7 +7,7 @@
   - name: Launch and populate F5 ARM template to deploy into Azure.  
     azure_rm_deployment:
       state: present
-      resource_group_name: bigip-rg-1
+      resource_group_name: arch1-vnet-rg
       template_link: "https://raw.githubusercontent.com/F5Networks/f5-azure-arm-templates/v5.4.0.0/supported/failover/same-net/via-api/n-nic/existing-stack/byol/azuredeploy.json"
       location: ukwest
       parameters:
@@ -80,14 +80,3 @@
             owner: OWNER
         allowUsageAnalytics:
           value: 'Yes'
-
-
-
-
-
-          
-          
-
-
-
-
