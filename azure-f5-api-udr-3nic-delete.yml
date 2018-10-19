@@ -11,12 +11,6 @@
       template_link: "https://raw.githubusercontent.com/F5Networks/f5-azure-arm-templates/v5.4.0.0/supported/failover/same-net/via-api/n-nic/existing-stack/byol/azuredeploy.json"
       location: ukwest
       parameters:
-        adminUsername:
-          value: '{{ f5user }}'
-        authenticationType:
-          value: password
-        adminPasswordOrKey:
-          value: '{{ f5pass }}'
         dnsLabel:
           value: arch-f5
         instanceName:
