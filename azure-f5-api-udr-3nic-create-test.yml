@@ -4,8 +4,9 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Create Azure Deploy
+  - name: Include Vars 
     include_vars: myvars.yaml
+  - name: Create Azure Deploy  
     azure_rm_deployment:
       state: present
       resource_group_name: bigip-rg-1
