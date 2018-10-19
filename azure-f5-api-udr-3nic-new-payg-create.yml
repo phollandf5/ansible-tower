@@ -18,9 +18,9 @@
         servicePrincipalSecret:
           value: secret
         adminUsername:
-          value: '{{ f5-user }}'
+          value: '{{ f5user }}'
         adminPasswordOrKey:
-          value : '{{ f5-pass }}'
+          value : '{{ f5pass }}'
         authenticationType:
           value: password
         dnsLabel:
