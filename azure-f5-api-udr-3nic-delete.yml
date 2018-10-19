@@ -11,6 +11,12 @@
       template_link: "https://raw.githubusercontent.com/F5Networks/f5-azure-arm-templates/v5.4.0.0/supported/failover/same-net/via-api/n-nic/existing-stack/byol/azuredeploy.json"
       location: ukwest
       parameters:
+        adminUsername:
+          value: '{{ f5user }}'
+        authenticationType:
+          value: password
+        adminPasswordOrKey:
+          value: '{{ f5pass }}'
         dnsLabel:
           value: arch-f5
         instanceName:
@@ -22,9 +28,9 @@
         bigIpVersion:
           value: 13.1.100000
         licenseKey1:
-          value: CESEG-XJQYJ-OBAQZ-PDVCW-TAGFSSO
+          value: OTSIC-HKKLK-XUDMX-YIORL-ACKYXAP
         licenseKey2:
-          value: IPSLL-PPNVX-OTCLQ-JYVUY-RAHMGVK
+          value: DLGRQ-KPQVB-MHSTC-FAURI-XEXYSKG
         numberOfAdditionalNics:
           value: 0
         additionalNicLocation:
@@ -74,14 +80,3 @@
             owner: OWNER
         allowUsageAnalytics:
           value: 'Yes'
-
-
-
-
-
-          
-          
-
-
-
-
