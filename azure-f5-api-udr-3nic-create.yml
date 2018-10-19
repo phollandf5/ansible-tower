@@ -28,9 +28,9 @@
         bigIpVersion:
           value: 13.1.100000
         licenseKey1:
-          value: OTSIC-HKKLK-XUDMX-YIORL-ACKYXAP
+          value: '{{ lic1 }}'
         licenseKey2:
-          value: DLGRQ-KPQVB-MHSTC-FAURI-XEXYSKG
+          value: '{{ lic2 }}'
         numberOfAdditionalNics:
           value: 0
         additionalNicLocation:
