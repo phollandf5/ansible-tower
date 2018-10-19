@@ -12,11 +12,11 @@
       location: ukwest
       parameters:
         tenantId:
-          value: "{{ subscription_id }}"
+          value: subscription_id
         clientId:
-          value: "{{ client_id }}"
+          value: client_id
         servicePrincipalSecret:
-          value: "{{ secret }}"
+          value: secret
         adminUsername:
           value: 
         adminPasswordOrKey:
