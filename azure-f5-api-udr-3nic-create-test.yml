@@ -18,9 +18,9 @@
         servicePrincipalSecret:
           value: secret
         adminUsername:
-          value: 
+          value: FakeUsername
         adminPasswordOrKey:
-          value : 
+          value : FakePassword
         authenticationType:
           value: password
         dnsLabel:
