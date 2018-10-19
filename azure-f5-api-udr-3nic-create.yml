@@ -40,7 +40,7 @@
         vnetName:
           value: arch1-vnet
         vnetResourceGroupName:
-          value: bigip-rg-1
+          value: arch1-vnet-rg
         tenantId:
           value: subscription_id
         clientId:

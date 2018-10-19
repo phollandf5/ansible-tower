@@ -4,7 +4,7 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Launch and populate F5 ARM template to deploy into Azure.  
+  - name: Remove F5 ARM template deployment from Azure.  
     azure_rm_deployment:
       state: absent
       resource_group_name: bigip-rg-1
@@ -34,7 +34,7 @@
         vnetName:
           value: arch1-vnet
         vnetResourceGroupName:
-          value: bigip-rg-1
+          value: arch1-vnet-rg
         tenantId:
           value: subscription_id
         clientId:
