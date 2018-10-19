@@ -28,9 +28,9 @@
         bigIpVersion:
           value: 13.1.100000
         licenseKey1:
-          value: CESEG-XJQYJ-OBAQZ-PDVCW-TAGFSSO
+          value: OTSIC-HKKLK-XUDMX-YIORL-ACKYXAP
         licenseKey2:
-          value: IPSLL-PPNVX-OTCLQ-JYVUY-RAHMGVK
+          value: DLGRQ-KPQVB-MHSTC-FAURI-XEXYSKG
         numberOfAdditionalNics:
           value: 0
         additionalNicLocation:
