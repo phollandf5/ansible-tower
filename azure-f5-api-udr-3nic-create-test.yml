@@ -4,25 +4,19 @@
   connection: local
   gather_facts: no
   tasks:
-  - name: Create Azure Deploy  
+  - name: Launch and populate F5 ARM template to deploy into Azure.  
     azure_rm_deployment:
       state: present
-      resource_group_name: bigip-rg-1
+      resource_group_name: arch1-f5-rg
       template_link: "https://raw.githubusercontent.com/F5Networks/f5-azure-arm-templates/v5.4.0.0/supported/failover/same-net/via-api/n-nic/existing-stack/byol/azuredeploy.json"
       location: ukwest
       parameters:
-        tenantId:
-          value: subscription_id
-        clientId:
-          value: client_id
-        servicePrincipalSecret:
-          value: secret
         adminUsername:
-          value: FakeUsername
-        adminPasswordOrKey:
-          value : FakePassword
+          value: '{{ f5user }}'
         authenticationType:
           value: password
+        adminPasswordOrKey:
+          value: '{{ f5pass }}'
         dnsLabel:
           value: arch-f5
         instanceName:
@@ -34,19 +28,25 @@
         bigIpVersion:
           value: 13.1.100000
         licenseKey1:
-          value: CESEG-XJQYJ-OBAQZ-PDVCW-TAGFSSO
+          value: '{{ lic1 }}'
         licenseKey2:
-          value: IPSLL-PPNVX-OTCLQ-JYVUY-RAHMGVK
+          value: '{{ lic2 }}'
         numberOfAdditionalNics:
-          value: 0
+          value: 1
         additionalNicLocation:
-          value: OPTIONAL
+          value: extra
         numberOfExternalIps:
           value: 1
         vnetName:
           value: arch1-vnet
         vnetResourceGroupName:
-          value: bigip-rg-1
+          value: arch1-vnet-rg
+        tenantId:
+          value: '{{ az_tenantId }}'
+        clientId:
+          value: '{{ az_clientId }}'
+        servicePrincipalSecret:
+          value: '{{ az_servicePrincipalSecret }}'
         mgmtSubnetName:
           value: mgmt
         mgmtIpAddressRangeStart:
