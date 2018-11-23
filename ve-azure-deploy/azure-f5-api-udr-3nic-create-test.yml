@@ -32,9 +32,9 @@
         licenseKey2:
           value: '{{ lic2 }}'
         numberOfAdditionalNics:
-          value: 1
+          value: 0
         additionalNicLocation:
-          value: extra
+          value: OPTIONAL
         numberOfExternalIps:
           value: 1
         vnetName:
