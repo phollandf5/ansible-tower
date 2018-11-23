@@ -1,0 +1,1 @@
+Repository of playbooks for deploying F5 into public cloud environments using F5 CFT/ARM templates.
